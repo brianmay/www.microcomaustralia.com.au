@@ -1,0 +1,89 @@
+/* basic elements */
+body { 
+	font-size: 12pt;
+	line-height: 16pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #555753; 
+	margin: 0px; 
+	}
+p { 
+	font-size: 12pt;
+	line-height: 16pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-top: 0px; 
+	text-align: justify;
+	}
+h3 { 
+	font-style: italic;
+	font-size: 12pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 16pt
+	letter-spacing: 1px; 
+	margin-bottom: 0px; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+
+
+/* specific divs */
+#container { 
+	padding: 0px 20px 0px 20px;  
+	margin: 0px; 
+	min-width: 250px;
+	}
+
+#intro { 
+	margin: 0px 20% 0px 20%; 
+	}
+#pageHeader { 
+	margin: 0px 0px 0px 0px; 
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	background: transparent url(graphics/microcom.png) no-repeat top center; 
+	min-width: 201px; 
+	height: 67px; 
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	font-size: 16pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+        text-align: center;
+	margin: 10px 0px 10px 0px; 
+	}
+
+#quickSummary {
+	clear:both; 
+	margin: 10px 10% 10px 10%; 
+	}
+#quickSummary p {
+	font-style: italic;
+	font-size: 12pt;
+	line-height: 22pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	}
+
+#footer { 
+	text-align: center; 
+	}
+#footer a:link, #footer a:visited { 
+	margin-right: 20px; 
+	}
+
