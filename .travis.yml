@@ -12,17 +12,3 @@ jobs:
     - stage: test
       script:
       - bundle exec htmlproofer html --disable-external
-
-    - stage: deploy
-      if: branch = master and type = push
-      install:
-      script:
-      - docker build
-            --file "Dockerfile"
-            --tag "brianmay/www.microcomaustralia.com.au:latest"
-            --build-arg "BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`"
-            --build-arg "VCS_REF=$TRAVIS_COMMIT"
-            .
-      - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-      - docker push "brianmay/www.microcomaustralia.com.au:latest"
-      - ./deploy.sh
